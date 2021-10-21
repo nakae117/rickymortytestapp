@@ -127,6 +127,9 @@ export default {
 	}),
 	mounted(){
 		this.consulta.page = this.$route.query.pagina ? parseInt(this.$route.query.pagina) : 1;
+		this.consulta.name = this.$route.query.nombre ? this.$route.query.nombre : '';
+		this.consulta.status = this.$route.query.status ? this.$route.query.status : '';
+		this.consulta.gender = this.$route.query.gender ? this.$route.query.gender : '';
 		this.buscar()
 	},
 	computed: {
@@ -143,6 +146,7 @@ export default {
 			if(this.$route.name === 'buscar'){
 				this.$router.push({path: this.$route.path, query: {
 					pagina: this.consulta.page,
+					nombre: this.consulta.name,
 					status: this.consulta.status,
 					gender: this.consulta.gender
 				}})
