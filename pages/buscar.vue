@@ -1,12 +1,12 @@
 <template>
 	<div class="main">
 		<v-container fluid>
-			<v-row justify="center" align="center">
-				<v-col class="baner text-center" cols="12" sm="12" md="12">
+			<v-row class="baner" justify="center" align="center">
+				<v-col class="text-center" cols="12" sm="12" md="12">
 					<img
 						src="/logo.png"
 						alt="Rick & Morty"
-						height="180px"
+						:height='($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? "120px" : (($vuetify.breakpoint.md) ? "150px" :"180px")'
 					>
 					<v-row justify="center" align="center">
 						<v-col cols="12" sm="6" md="6">
@@ -24,7 +24,7 @@
 					</v-row>
 
 					<v-row justify="center" align="center">
-						<v-col cols="12" sm="2" md="2">
+						<v-col cols="6" sm="4" md="2">
 							<v-select
 								v-model="consulta.status"
 								:items="status"
@@ -36,7 +36,7 @@
 							></v-select>
 						</v-col>
 
-						<v-col cols="12" sm="2" md="2">
+						<v-col cols="6" sm="4" md="2">
 							<v-select
 								v-model="consulta.gender"
 								:items="generos"
@@ -182,6 +182,5 @@ export default {
 .baner {
 	background-image: url('/bg.png');
 	background-position: center;
-	height: 400px;
 }
 </style>
