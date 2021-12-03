@@ -9,11 +9,7 @@
 			<br>
 			
 			<h1 class="white--text mb-5">Bienvenido a Rick y Morty</h1>
-			<!-- <v-btn style="background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%); color: #fff;" to="/buscar"> -->
-			<!-- <v-btn style="background: linear-gradient(45deg, #224f63 30%, #02b1c8 90%); color: #fff;" to="/buscar"> -->
-			<!-- <v-btn style="background: linear-gradient(45deg, #224f63 30%, #02b1c8 90%); color: #fff;" to="/buscar"> -->
 			<v-btn style="background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%); color: #fff;" to="/buscar">
-			<!-- <v-btn color="primary" to="/buscar"> -->
 				Continuar
 			</v-btn>
 		</v-col>

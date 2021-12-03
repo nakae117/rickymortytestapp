@@ -66,7 +66,7 @@
 			</v-overlay>
 
 			<v-row>
-				<v-col class="text-center py-16 my-16" cols="12" sm="12" md="12" v-if="personajes.length === 0">
+				<v-col class="text-center py-16 my-16" cols="12" sm="12" md="12" v-if="personajes.length === 0 && !cargando">
 					<h4 class="text-h4">
 						Uh-oh!
 					</h4>
