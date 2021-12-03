@@ -228,6 +228,10 @@ export default {
 img {
 	border: 3px solid #fff;
 }
+.v-card__text {
+	height: calc(90vh - 200px);
+	overflow-y: auto;
+}
 </style>
 
 <style>
