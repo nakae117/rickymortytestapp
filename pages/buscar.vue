@@ -182,5 +182,7 @@ export default {
 .baner {
 	background-image: url('/bg.png');
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 </style>

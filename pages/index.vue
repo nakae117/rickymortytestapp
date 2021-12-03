@@ -34,6 +34,9 @@ export default {
 <style scoped>
 .baner {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	backdrop-filter: brightness(50%);
 	height: 100vh;
 	
